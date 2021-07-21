@@ -6,95 +6,177 @@
 		<title>Reflected Network</title>
 		<style>
 			@import url('https://reflected.network/assets/fontstack.css');
-      html {
-        background-color: black;
-        color: black;
-        overflow: hidden;
+      
+      .copyable {
+        text-decoration: none;
+        font-weight: normal;
+        background-color: #191621;
+        color: white;
+        padding: 3px;
+        border-radius: 3px;
+        font-family: monospace;
+      }
+
+      .mainlogo {
+        width: auto;
+        max-height: 100%;
+        display: inline;
+      }
+
+      .titlebar {
+        height: 80px;
+        background-color: aliceblue;
+        padding: 5px;
+        margin: 0px;
+        overflow-y: none;
+        position: fixed;
+        top: 0px;
+        width: 100vw;
+        left: 0px;
+        z-index: 100;
+      }
+
+      .stickright {
+        position: absolute;
+        right: 25px;
+        top: 0px;
+        display: inline;
+        height: 90px;
+        padding: 0px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+
+      .carouselItem {
+        height: calc(100vh - 90px);
+        margin: 0px;
+        background-size: 110%;
+        background-position: center;
+      }
+      
+      .carousel {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .card {
+        background-color: rgba(255, 255, 255, 0.623);
+        padding: 30px;
+        border-radius: 10px;
+        height: 80%;
+        position: relative;
+        top: 5%;
+        width: 40%;
+        font-family: 'roboto', sans-serif;
+        font-size: 2.5rem;
+      }
+
+      .cardleft {
+        left: 50px;
+      }
+
+      .cardright {
+        left: calc(60% - 125px);
+      }
+
+      .card h1 {
+        font-family: 'raider crusader straight', sans-serif;
+        font-size: 4rem;
+        text-align: center;
       }
 
       body {
         margin: 0px;
-        width: 100vw;
-        height: 100vh;
+        margin-top: 90px;
+        overflow-x: hidden;
+      }
+
+      .linkholder {
+        background-color: black;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 15px), 0 100%);
+        color: white;
+        height: 110%;
+        display: inline-block;
+        margin: 0px;
+        width: 80px;
         text-align: center;
-        text-anchor: middle;
-        line-height: 80vh;
+        transition: height 0.3s;
       }
 
-      @keyframes fadein {
-        from {
-          color: black;
-        }
+      .linkholder:hover {
+        height: 130%;
+      }
 
-        to {
+      .linkholder span {
+        color: white;
+        text-decoration: none;
+        line-height: 120px;
+      }
+
+      .linkholder::after {
+        background: linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%)
+      }
+
+      .ipthing {
+        display: inline-block;
+        margin-right: 50px;
+        font-size: 2.5rem;
+      }
+
+      .mobile {
+        display: none;
+      }
+
+      @media screen and (max-width:1220px){
+        .mobile {
+          display: block;
+          background-color: black;
           color: white;
+          width: 100vw;
+          height: 100vh;
         }
-      }
 
-      .numberflex {
-        font-family: 'Raider Crusader Straight', serif;
-        animation: 5s ease-in-out 1s 1 forwards fadein;
-        font-size: 15rem;
+        .titlebar {
+          display: none;
+        }
 
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .ipbox {
-        animation: 5s ease-in-out 1s 1 forwards fadein;
-        font-size: 5rem;
-        font-family: 'Roboto', sans-serif;
-      }
-
-      .numberflex span {
-        width: 20%;
+        .carousel {
+          display: none;
+        }
       }
 		</style>
 	</head>
 	<body>
-    <div class="numberflex" id="timer">
-      <span id="days">00</span>:
-      <span id="hrs">00</span>:
-      <span id="mins">00</span>:
-      <span id="sec">00</span>
+    <div class="mobile">
+      <h1>Sorry, this server is only available to Java players.</h1>
     </div>
-    <div class="ipbox">
-      <span id="newip"></span>
+    <div class="titlebar">
+      <img class="mainlogo" src="https://reflected.network/assets/banner.png" />
+      <div class="stickright">
+        <div class="ipthing">IP: <span class="copyable">mc.reflected.network</span></div>
+        <a href="https://reflected.network/blog" target="_blank" rel="noopener noreferrer"><div class="linkholder"><span>Devblog</span></div></a>
+        <a href="https://reflected.network/discord" target="_blank" rel="noopener noreferrer"><div class="linkholder"><span>Discord</span></div></a>
+        <a href="https://twitter.com/reflectednwk" target="_blank" rel="noopener noreferrer"><div class="linkholder"><span>Twitter</span></div></a>
+      </div>
     </div>
-    
-    
-    <script>
-      function pad(str, max) {
-        return (str).toString().length < max ? pad("0" + (str).toString(), max) : (str).toString();
-      }
-
-      window.updateClock = () => {
-        const datedif = new Date("June 25, 2021 12:00:00").getTime() - new Date().getTime();
-        if (datedif <= 0) {
-          if (document.getElementById("timer")) {
-            document.getElementById("timer").remove();
-          }
-          document.getElementById("newip").innerText = 'IP: reflected.network';
-        } else {
-          const days = pad(Math.floor(datedif / (1000 * 60 * 60 * 24)), 2);
-          const hours = pad(Math.floor((datedif % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)), 2);
-          const minutes = pad(Math.floor((datedif % (1000 * 60 * 60)) / (1000 * 60)), 2);
-          const seconds = pad(Math.floor((datedif % (1000 * 60)) / 1000), 2);
-          document.getElementById("days").innerText = days;
-          document.getElementById("hrs").innerText = hours;
-          document.getElementById("mins").innerText = minutes;
-          document.getElementById("sec").innerText = seconds;
-        } 
-        
-      }
-
-      setInterval(() => {
-        updateClock();
-      }, 1000);
-
-      updateClock();
-    </script>
+    <div class="carousel">
+      <div class="carouselItem" style="background-image: url('images/spleefrun_wide.png');">
+        <div class="card cardright">
+          <h1>SpleefRun</h1>
+          <p>Run! The ground disappears beneath you in this fast-paced take on Spleef. Collect powerups like trampolines and grenades to make sure you're the last one standing.</p>
+        </div>
+      </div>
+      <div class="carouselItem" style="background-image: url('images/survival_wide.png');">
+        <div class="card cardleft">
+          <h1>Survival Season 3</h1>
+          <p>A modded survival experience including custom mobs, blocks, enchantments, and items, that you can play entirely from vanilla! Available Friday, July 23rd.</p>
+        </div>
+      </div>
+      <div class="carouselItem" style="background-image: url('images/lobby_wide.png');">
+        <div class="card cardright">
+          <h1>What're you waiting for?</h1>
+          <p style="text-align: center;">Join our server today!<br/><br/>IP: <span class="copyable">mc.reflected.network</span></p>
+        </div>
+      </div>
+    </div>
 	</body>
 <html>
