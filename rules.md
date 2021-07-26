@@ -65,7 +65,11 @@ Alternate accounts are not allowed due to their ability to bypass our punishment
 
 ### Cheating and Exploits
 
-Using hacked clients that provide you with an unfair advantage to other players is not allowed. Exploiting vulnerabilities is also not allowed. If you're confused as to whether something is an exploit or intended behavior, please report it to [our team](#contact) and refrain from using it.
+Using modified clients (except for one exception, see below) is not allowed. Exploiting vulnerabilities is also not allowed. If you're confused as to whether something is an exploit or intended behavior, please report it to [our team](#contact) and refrain from using it.
+
+### LabyMod Exception
+
+[LabyMod](https://labymod.net/) is the only allowed client modification, provided you are using the Vanilla-based version, and not the Forge-based version. Lunar Client and Badlion Client ARE NOT ALLOWED because of how they modify hit packets.
 
 # Punishment Grid
 
