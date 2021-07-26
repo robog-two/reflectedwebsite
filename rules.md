@@ -69,15 +69,10 @@ Using hacked clients that provide you with an unfair advantage to other players 
 
 # Punishment Grid
 
-After each punishment, your punishment level increases. For ZERO-TOLERANCE infractions, you are automatically punished at Level 3. Levels are applied to both grids, so a Level 1 in one grid means you will recieve a Level 2 in another if you are punished again.
+After each punishment, your punishment level increases. For ZERO-TOLERANCE infractions, you are automatically punished at Level 3.
 
-For infractions involving messages or other posted content
-| Level 1 | Level 2  | Level 3 |
-| --- | --- | --- |
-| 7 Day Mute | 30 Day Mute |Permanent Mute|
-
-
-For infractions involving actions
-| Level 1 | Level 2  | Level 3 |
-| --- | --- | --- |
-| 7 Day Ban | 30 Day Ban |Permanent Ban|
+Depending on whether the infraction involves a message or an action, the punishment will be a mute or a ban respectively.
+| Level 1    | Level 2     | Level 3        |
+|:-----------|:------------|:---------------|
+| 7 Day Ban  | 30 Day Ban  | Permanent Ban  |
+| 7 Day Mute | 30 Day Mute | Permanent Mute |
