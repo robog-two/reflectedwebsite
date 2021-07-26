@@ -72,6 +72,7 @@ Using hacked clients that provide you with an unfair advantage to other players 
 After each punishment, your punishment level increases. For ZERO-TOLERANCE infractions, you are automatically punished at Level 3.
 
 Depending on whether the infraction involves a message or an action, the punishment will be a mute or a ban respectively.
+
 | Level 1    | Level 2     | Level 3        |
 |:-----------|:------------|:---------------|
 | 7 Day Ban  | 30 Day Ban  | Permanent Ban  |
