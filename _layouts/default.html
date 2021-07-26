@@ -13,17 +13,15 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      <header style="width: auto">
         <a href="{{ "/" | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>
 
       </header>
-      <section>
+      <section  style="width: 80%">
 
       {{ content }}
 
       </section>
-      <footer>
-      </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
