@@ -71,6 +71,12 @@ Using modified clients (except for one exception, see below) is not allowed. Exp
 
 [LabyMod](https://labymod.net/) is the only allowed client modification, provided you are using the Vanilla-based version, and not the Forge-based version. Lunar Client and Badlion Client ARE NOT ALLOWED because of how they modify hit packets.
 
+## Rule Six
+
+### Spam, Scams,  and Advertising
+
+Chat messages or usage of features that are repetitive, contain little content, or contian unrelated content are not allowed. This also includes content with malicious links, files, advertising, or social engineering techniques to encourage other users of our services to perform actions or visit websites they would otherwise stay away from. This does NOT mean that all links are banned, just that ones that are misleading or only used for advertising are.
+
 # Punishment Grid
 
 After each punishment, your punishment level increases. For ZERO-TOLERANCE infractions, you are automatically punished at Level 3.
