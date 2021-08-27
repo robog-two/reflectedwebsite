@@ -12,160 +12,18 @@
 		<meta property="twitter:description" content="Fully custom minigames, modded survival, and so much more">
 		<link rel="shortcut icon" href="https://reflected.network/assets/icon.png" type="image/png">  
 		<title>Reflected Network - Minecraft Server</title>
-		<style>
-			@import url('https://reflected.network/assets/fontstack.css');
-      
-      .copyable {
-        text-decoration: none;
-        font-weight: normal;
-        background-color: #191621;
-        color: white;
-        padding: 3px;
-        border-radius: 3px;
-        font-family: monospace;
-      }
-
-      .mainlogo {
-        width: auto;
-        max-height: 100%;
-        display: inline;
-      }
-
-      .titlebar {
-        height: 80px;
-        background-color: aliceblue;
-        padding: 5px;
-        margin: 0px;
-        overflow-y: none;
-        position: fixed;
-        top: 0px;
-        width: 100vw;
-        left: 0px;
-        z-index: 100;
-      }
-
-      .stickright {
-        position: absolute;
-        right: 25px;
-        top: 0px;
-        display: inline;
-        height: 90px;
-        padding: 0px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      }
-
-      .carouselItem {
-        height: calc(100vh - 90px);
-        margin: 0px;
-        background-size: 110%;
-        background-position: center;
-      }
-      
-      .carousel {
-        margin: 0px;
-        padding: 0px;
-      }
-
-      .card {
-        background-color: rgba(255, 255, 255, 0.623);
-        padding: 30px;
-        border-radius: 10px;
-        height: 80%;
-        position: relative;
-        top: 5%;
-        width: 40%;
-        font-family: 'roboto', sans-serif;
-        font-size: 2.5rem;
-      }
-
-      .cardleft {
-        left: 50px;
-      }
-
-      .cardright {
-        left: calc(60% - 125px);
-      }
-
-      .card h1 {
-        font-family: 'raider crusader straight', sans-serif;
-        font-size: 4rem;
-        text-align: center;
-      }
-
-      body {
-        margin: 0px;
-        margin-top: 90px;
-        overflow-x: hidden;
-      }
-
-      .linkholder {
-        background-color: black;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 15px), 0 100%);
-        color: white;
-        height: 110%;
-        display: inline-block;
-        margin: 0px;
-        width: 80px;
-        text-align: center;
-        transition: height 0.3s;
-      }
-
-      .linkholder:hover {
-        height: 130%;
-      }
-
-      .linkholder span {
-        color: white;
-        text-decoration: none;
-        line-height: 120px;
-      }
-
-      .linkholder::after {
-        background: linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%)
-      }
-
-      .ipthing {
-        display: inline-block;
-        margin-right: 50px;
-        font-size: 2.5rem;
-      }
-
-      .mobile {
-        display: none;
-      }
-
-      @media screen and (max-width:720px){
-        .mobile {
-          display: block;
-          background-color: black;
-          color: white;
-          width: 100vw;
-          height: 100vh;
-          font-family: sans-serif;
-          font-size: 3rem;
-        }
-
-        .titlebar {
-          display: none;
-        }
-
-        .carousel {
-          display: none;
-        }
-      }
-		</style>
+		<link type="text/css" href="./styles/index.css" rel="stylesheet">
 	</head>
 	<body>
-    <div class="mobile">
-      <h1>Sorry, this server is only available to Java players.</h1>
-    </div>
     <div class="titlebar">
       <img class="mainlogo" src="https://reflected.network/assets/banner.png" />
       <div class="stickright">
         <div class="ipthing">IP: <span class="copyable">mc.reflected.network</span></div>
-        <a href="https://reflected.network/blog" target="_blank" rel="noopener noreferrer"><div class="linkholder"><span>Devblog</span></div></a>
-        <a href="https://reflected.network/discord" target="_blank" rel="noopener noreferrer"><div class="linkholder"><span>Discord</span></div></a>
-        <a href="https://twitter.com/reflectednwk" target="_blank" rel="noopener noreferrer"><div class="linkholder"><span>Twitter</span></div></a>
+        <div class="bookmarks">
+          <a href="https://reflected.network/blog" target="_blank" rel="noopener noreferrer"><div class="linkholder"><span>Devblog</span></div></a>
+          <a href="https://reflected.network/discord" target="_blank" rel="noopener noreferrer"><div class="linkholder"><span>Discord</span></div></a>
+          <a href="https://twitter.com/reflectednwk" target="_blank" rel="noopener noreferrer"><div class="linkholder"><span>Twitter</span></div></a>
+        </div>
       </div>
     </div>
     <div class="carousel">
