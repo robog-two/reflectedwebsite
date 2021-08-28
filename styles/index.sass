@@ -85,11 +85,24 @@ body
 .copyable
   text-decoration: none
   font-weight: 400
+  font-size: 2.5rem
   background-color: #191621
   color: #fff
   padding: 3px
   border-radius: 3px
   font-family: Courier New, Courier, monospace
+  display: inline-block
+  transform: translateY(-13px)
+
+.bedrocklinks
+  margin-top: 20px
+  font-size: 1.5rem
+
+.bedrocklinks a
+  color: aliceblue
+
+.bedrocklinks a:hover
+  color: #2fb9f0
 
 #downloadlink
   padding: 5px
@@ -102,14 +115,19 @@ body
 #downloadcontainer
   font-size: 4rem !important
   color: white
-  width: 40%
-  padding-top: 5%
-  padding-right: 50px
-  height: 100%
+  width: 100%
+  margin-bottom: 150px
 
 #launchershot
   display: flex
-  flex-direction: row-reverse
+  flex-direction: column-reverse
+  text-align: center
+
+.ipspan
+  background-color: #fffd44
+  border-bottom: 3px solid #aaffcc
+  color: #010203
+  padding: 5px
 
 .outline
   filter: drop-shadow(-1px -1px black) drop-shadow(-1px 1px black) drop-shadow(1px -1px black) drop-shadow(1px 1px black)
@@ -125,3 +143,14 @@ body
   .socials svg
     width: 30px
     height: 30px
+
+  #launchershot
+    flex-direction: row-reverse
+
+  #downloadcontainer
+    width: 40%
+    padding-top: 5%
+    padding-right: 50px
+    height: 100%
+    margin-bottom: 0px
+    text-align: left
