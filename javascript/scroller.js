@@ -26,7 +26,7 @@ const debounce = (fn) => {
 // Reads out the scroll position and stores it in the data attribute
 // so we can use it in our stylesheets
 const storeScroll = () => {
-  let posY = (visualViewport.height * 0.2) - ((window.scrollY - (visualViewport.height * 2)) * 0.7)
+  let posY = (visualViewport.height * 0.1) - ((window.scrollY - (visualViewport.height * 2)) * 0.7)
   console.log(posY)
   document.getElementById("launchershot").style.backgroundPositionY = `${posY}px`
 
