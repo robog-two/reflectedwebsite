@@ -1,124 +1,127 @@
----
----
-
 @import url('https://reflected.network/assets/fontstack.css')
-      
-.copyable
-  text-decoration: none
-  font-weight: normal
-  background-color: #191621
-  color: white
-  padding: 3px
-  border-radius: 3px
-  font-family: monospace
-
-.mainlogo
-  width: auto
-  max-height: 100%
-  display: inline
-
-.titlebar
-  height: 80px
-  background-color: aliceblue
-  padding: 5px
-  margin: 0px
-  overflow-y: none
-  position: fixed
-  top: 0px
-  width: 100vw
-  left: 0px
-  z-index: 100
-
-.carouselItem
-  height: calc(100vh - 90px)
-  margin: 0px
-  background-size: cover
-  background-position: center
-
-.carousel
-  margin: 0px
-  padding: 0px
-
-.card
-  background-color: #a9f0cba0
-  filter: drop-shadow(0 0 0.75rem #a9f0cb)
-  padding: 30px
-  border-radius: 10px
-  height: 80%
-  position: relative
-  top: 5%
-  width: 40%
-  font-family: 'Roboto Slab', sans-serif
-  font-size: 2.5rem
-
-.card h1
-  font-family: 'Ubuntu Italic', sans-serif
-  font-size: 4rem
-  text-align: center
 
 body
   margin: 0px
-  margin-top: 90px
   overflow-x: hidden
 
-.linkholder
-  background: linear-gradient(34deg, rgba(0,1,3,1) 0%, rgba(22,6,21,1) 78%, rgba(28,7,26,1) 84%, rgba(36,9,32,1) 89%, rgba(38,10,34,1) 92%, rgba(44,11,39,1) 95%, rgba(47,12,42,1) 97%, rgba(49,13,44,1) 99%, rgba(56,14,48,1) 100%)
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 15px), 0 100%)
-  color: white
-  height: 110%
-  display: inline-block
-  margin: 0px
-  width: 80px
+.pagesection
+  height: 100vh
+  width: 100vw
+  overflow-y: hidden
+
+.actionshot
+  background-size: 200%
+  background-repeat: no-repeat
+  background-position-x: center
+  background-position-y: bottom
+  width: 100%
+  height: 100%
+
+.shadow
+  filter: drop-shadow(-20px 20px black)
+
+.launchershot
+  background-size: 75%
+  background-repeat: no-repeat
+  background-position-x: center
+  background-position-y: bottom
+  transition: background-position-y 0.01s
+
+@keyframes moveup
+  0%
+    transform: translateY(50vh)
+  100%
+    transform: translateY(0vh)
+
+@keyframes moveout
+  0%
+    transform: translateY(0vh)
+  100%
+    transform: translateY(-100vh)
+
+#titlepostscroll
+  animation: moveout 1s ease-in 0s 1 forwards
+
+.centertitle
+  color: fffd44
   text-align: center
-  transition: height 0.3s
+  height: 100%
+  display: flex
+  flex-direction: column-reverse
+  transform: translateY(100vh)
+  animation: moveup 1s ease-out 0s 1 forwards
 
-.linkholder:hover
-  height: 130%
+.robotoslab
+  font-family: 'Roboto Slab', sans-serif
+  font-size: 10rem
 
-.linkholder span
-  color: white
+.footer
+  width: 100%
+  padding-top: 1%
+  padding-bottom: 5%
+  background-color: #262325
+
+.socials
+  display: flex
+  justify-content: center
+
+.socials svg
+  display: inline
+  width: 100px
+  height: 100px
+  margin-left: 10px
+  margin-right: 10px
+  fill: #d1cfd0
+
+.ubuntuitalic
+  font-family: 'Ubuntu Italic', cursive
+  font-size: 3rem
+
+.reflectedfont
+  font-family: 'Raider Crusader Straight', serif
+  font-size: 10rem
+  color: #fffd44
+
+.copyable
   text-decoration: none
-  line-height: 120px
+  font-weight: 400
+  background-color: #191621
+  color: #fff
+  padding: 3px
+  border-radius: 3px
+  font-family: Courier New, Courier, monospace
 
-.ipthing
-  display: inline-block
-  margin-right: 50px
-  font-size: 2.5rem
+#downloadlink
+  padding: 5px
+  font-size: 3rem !important
+  color: #010203
+  text-decoration: none
+  background-color: #fffd44
+  border-bottom: 3px solid #aaffcc
 
-.mobile
-  display: none
+#downloadcontainer
+  font-size: 4rem !important
+  color: white
+  width: 40%
+  padding-top: 5%
+  padding-right: 50px
+  height: 100%
 
-@media screen and (max-width:1024px)
-  .card
-    width: 60%
-    left: 15%
+#launchershot
+  display: flex
+  flex-direction: row-reverse
 
-  .mainlogo
-    display: none
+.outline
+  filter: drop-shadow(-1px -1px black) drop-shadow(-1px 1px black) drop-shadow(1px -1px black) drop-shadow(1px 1px black)
 
-  .stickright
-    text-align: center
-    margin-top: 15px
-  
-  .bookmarks
-    display: none !important
+@media screen and (min-width: 1024px)
+  .actionshot
+    background-size: 75%
 
-@media screen and (min-width:1024px)
-  .cardleft
-    left: 50px
+  .launchershot
+    background-size: 50%
+    background-position-x: 30px
 
-  .cardright
-    left: calc(60% - 125px)
-
-  .stickright
-    position: absolute
-    right: 25px
-    top: 0px
-    display: inline
-    padding: 0px
-    height: 90px
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-  
-  .bookmarks
-    display: inline
-    padding: 0px
+  .socials svg
+    width: 30px
+    height: 30px
