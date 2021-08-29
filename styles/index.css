@@ -157,6 +157,16 @@ body {
   filter: drop-shadow(-1px -1px black) drop-shadow(-1px 1px black) drop-shadow(1px -1px black) drop-shadow(1px 1px black);
 }
 
+#carousel {
+  background-color: #010203;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s;
+}
+
 @media screen and (min-width: 1024px) {
   .actionshot {
     background-size: 75%;
