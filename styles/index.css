@@ -202,8 +202,12 @@ body {
     justify-content: center;
   }
 
-  .actionshot {
+  .mobiledarkenlight {
     background-color: rgba(0, 0, 0, 0.04);
+  }
+
+  .mobiledarken {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
