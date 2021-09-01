@@ -124,7 +124,7 @@ body {
   color: #2fb9f0;
 }
 
-#downloadlink {
+.downloadlink {
   padding: 5px;
   font-size: 3rem !important;
   color: #010203;
@@ -193,6 +193,17 @@ body {
     height: 100%;
     margin-bottom: 0px;
     text-align: left;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .centertitle {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .actionshot {
+    background-color: rgba(0, 0, 0, 0.04);
   }
 }
 
