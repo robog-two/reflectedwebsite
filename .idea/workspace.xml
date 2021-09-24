@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b744f361-194e-40d5-a186-0578b0f81ad4" name="Changes" comment="fix preconnect">
+    <list default="true" id="b744f361-194e-40d5-a186-0578b0f81ad4" name="Changes" comment="improve firefox compat &amp; optimization">
+      <change afterPath="$PROJECT_DIR$/images/actionshot.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/carousel/slide1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/carousel/slide2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/carousel/slide3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/carousel/slide4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/carousel/slide5.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/largebg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/launcherscreenie.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lobby_wide.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/spleefrun_wide.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/survival_wide.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/launcherscreenie.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/launcherscreenie.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/index_firstload.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index_firstload.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/index_firstload.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index_firstload.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/index_firstload.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index_firstload.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -43,7 +59,8 @@
       <option name="presentableId" value="Default" />
       <updated>1631244172261</updated>
       <workItem from="1631244174791" duration="67000" />
-      <workItem from="1632518686532" duration="4920000" />
+      <workItem from="1632518686532" duration="7555000" />
+      <workItem from="1632526549677" duration="620000" />
     </task>
     <task id="LOCAL-00001" summary="optimize website loading">
       <created>1632520900765</created>
@@ -87,7 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1632523572839</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="async load fonts">
+      <created>1632523725932</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1632523725932</updated>
+    </task>
+    <task id="LOCAL-00008" summary="accessibility access for links">
+      <created>1632524032969</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1632524032969</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +134,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="optimize website loading" />
@@ -111,6 +143,9 @@
     <MESSAGE value="optimize website loading pass 4" />
     <MESSAGE value="optimize mobile layout" />
     <MESSAGE value="fix preconnect" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix preconnect" />
+    <MESSAGE value="async load fonts" />
+    <MESSAGE value="accessibility access for links" />
+    <MESSAGE value="improve firefox compat &amp; optimization" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve firefox compat &amp; optimization" />
   </component>
 </project>
