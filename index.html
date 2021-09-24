@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 	 	<meta charset="UTF-8">
+    <meta name="viewport">
 	 	<meta property="og:title" content="Reflected Network">
 		<meta name="twitter:title" content="Reflected Network Minecraft Server">
 		<meta name="theme-color" content="#24C6A6">
@@ -10,14 +11,17 @@
 		<meta property="og:description" content="Fully custom minigames, modded survival, and so much more!">
 		<meta name="description" content="Fully custom minigames, modded survival, and so much more">
 		<meta property="twitter:description" content="Fully custom minigames, modded survival, and so much more">
-		<link rel="shortcut icon" href="https://reflected.network/assets/icon.png" type="image/png">  
-    <script src="javascript/carousel.js" type="application/javascript"></script>
+		<link rel="shortcut icon" href="https://reflected.network/assets/icon.png" type="image/png">
+    <script src="javascript/carousel.js" type="application/javascript" async></script>
 		<title>Reflected Network</title>
-		<link type="text/css" href="./styles/index.css" rel="stylesheet">
+    <style>
+        @media screen and (max-width: 1025px){.centertitle{display:flex;flex-direction:column-reverse;justify-content:center}.mobiledarkenlight{background-color:rgba(0,0,0,.04)}.mobiledarken{background-color:rgba(0,0,0,.3)}}body{margin:0px;overflow-x:hidden}.pagesection{height:100vh;width:100vw;overflow-y:hidden}.actionshot{background-size:200%;background-repeat:no-repeat;background-position-x:center;background-position-y:bottom;width:100%;height:100%}.shadow{filter:drop-shadow(-20px 20px black)}@keyframes moveup{0%{transform:translateY(50vh)}100%{transform:translateY(0vh)}}.centertitle{color:#fffd44;text-align:center;height:100%;display:flex;flex-direction:column-reverse;transform:translateY(100vh);animation:moveup 1s ease-out 0s 1 forwards}.robotoslab{font-family:"Roboto Slab",sans-serif;font-size:10rem}.ubuntuitalic{font-family:"Ubuntu Italic",cursive;font-size:3rem}.reflectedfont{font-family:"Raider Crusader Straight",serif;font-size:10rem;color:#fffd44}/*# sourceMappingURL=index_firstload.css.map */
+    </style>
+    <link rel="preload" href="./styles/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	</head>
   <body onload="loaded()">
-    <div class="pagesection" style="background-image: url('images/largebg.png'); background-size: cover; background-position: center;">
-      <div class="actionshot shadow mobiledarkenlight" style="background-image: url('images/actionshot.png')">
+    <div class="pagesection" style="background-image: url('images/largebg.avif'); background-size: cover; background-position: center;">
+      <div class="actionshot shadow mobiledarkenlight" style="background-image: url('images/actionshot.avif')">
         <div class="centertitle reflectedfont outline" id="titleprescroll">
           <div>
             Reflected
@@ -28,11 +32,11 @@
         </div>
       </div>
     </div>
-    <img src="images/carousel/slide1.png" class="preload" />
-    <img src="images/carousel/slide2.png" class="preload" />
-    <img src="images/carousel/slide3.png" class="preload" />
-    <img src="images/carousel/slide4.png" class="preload" />
-    <img src="images/carousel/slide5.png" class="preload" />
+    <img src="images/carousel/slide1.avif" class="preload" />
+    <img src="images/carousel/slide2.avif" class="preload" />
+    <img src="images/carousel/slide3.avif" class="preload" />
+    <img src="images/carousel/slide4.avif" class="preload" />
+    <img src="images/carousel/slide5.avif" class="preload" />
     <div class="pagesection" id="carousel">
       <div class="centertitle robotoslab mobiledarken">
         <br />
@@ -43,20 +47,20 @@
         <span class="reflectedfont shadow">RN</span>
       </div>
     </div>
-    <div class="pagesection launchershot" id="launchershot" style="background-color: #010203; background-image: url('images/launcherscreenie.png');" id="launcherbg">
+    <div class="pagesection launchershot" id="launchershot" style="background-color: #010203; background-image: url('images/launcherscreenie.avif');" id="launcherbg">
       <div class="download robotoslab" id="downloadcontainer">
         <p>Download.<br />Install.<br />Play multiplayer,<br />with everybody.</p>
         <a id="downloadlink" class="robotoslab downloadlink">Download Client</a>
       </div>
     </div>
-    <script src="javascript/scroller.js" type="application/javascript"></script>
-    <script src="javascript/platforms.js" type="application/javascript"></script>
+    <script src="javascript/scroller.js" type="application/javascript" defer></script>
+    <script src="javascript/platforms.js" type="application/javascript" defer></script>
     <div class="footer">
       <div class="socials">
         <a href="https://rnwk.xyz/discord" rel="noopener noreferrer nofollow" target="_blank">
           <svg viewBox="0 0 31 30">
             <path d="M 26.0015,6.9529 C 24.0021,6.03845 21.8787,5.37198 19.6623,5 c -0.279,0.48048 -0.589,1.13144 -0.806,1.64292 -2.3574,-0.34099 -4.6978,-0.34099 -7.0227,0 C 11.6166,6.13144 11.2911,5.48048 11.0276,5 8.79575,5.37198 6.67235,6.03845 4.6869,6.9529 0.672601,12.8736 -0.41235,18.6548 0.130124,24.3585 2.79599,26.2959 5.36889,27.4739 7.89682,28.2489 8.51679,27.4119 9.07477,26.5129 9.55525,25.5675 8.64079,25.2265 7.77283,24.808 6.93587,24.312 c 0.21699,-0.1549 0.43399,-0.3254 0.63548,-0.4959 5.05275,2.3094 10.52555,2.3094 15.51625,0 0.217,0.1705 0.4185,0.341 0.6355,0.4959 -0.837,0.496 -1.7049,0.9145 -2.6194,1.2555 0.4805,0.9454 1.0385,1.8444 1.6584,2.6814 2.5264,-0.775 5.1148,-1.953 7.7667,-3.8904 C 31.1952,17.7559 29.4733,12.0212 26.0015,6.9529 Z M 10.2527,20.8402 c -1.51894,0 -2.75888,-1.3794 -2.75888,-3.0688 0,-1.6894 1.20894,-3.0689 2.75888,-3.0689 1.5344,0 2.7898,1.3795 2.7588,3.0689 0,1.6894 -1.2244,3.0688 -2.7588,3.0688 z m 10.1846,0 c -1.519,0 -2.7605,-1.3794 -2.7605,-3.0688 0,-1.6894 1.2105,-3.0689 2.7605,-3.0689 1.5344,0 2.7898,1.3795 2.7588,3.0689 0,1.6894 -1.2089,3.0688 -2.7588,3.0688 z"
-              id="path2"" />
+              id="path2" />
           </svg>
         </a>
         <a href="https://rnwk.xyz/twitter" rel="noopener noreferrer nofollow" target="_blank">
@@ -72,4 +76,4 @@
       </div>
     </div>
   </body>
-<html>
+</html>
