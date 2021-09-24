@@ -6,20 +6,20 @@ const debounce = (fn) => {
 
   // The debounce function returns a new function that can receive a variable number of arguments
   return (...params) => {
-    
+
     // If the frame variable has been defined, clear it now, and queue for next frame
-    if (frame) { 
+    if (frame) {
       cancelAnimationFrame(frame);
     }
 
     // Queue our function call for the next frame
     frame = requestAnimationFrame(() => {
-      
+
       // Call our function and pass any params we received
       fn(...params);
     });
 
-  } 
+  }
 };
 
 
@@ -27,8 +27,7 @@ const debounce = (fn) => {
 // so we can use it in our stylesheets
 const storeScroll = () => {
   let posY = (visualViewport.height * 0.1) - ((window.scrollY - (visualViewport.height * 2)) * 0.7)
-  console.log(posY)
-  document.getElementById("launchershot").style.backgroundPositionY = `${posY}px`
+  document.getElementById("launcherbg").style.backgroundPositionY = `${posY}px`
 
   if (window.scrollY > 0.3 * visualViewport.height) {
     if (document.getElementById("titleprescroll")) {
