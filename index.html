@@ -2,7 +2,9 @@
 <html lang="en">
 	<head>
 	 	<meta charset="UTF-8">
-    <meta name="viewport">
+    <link rel="preconnect" href="reflected.network">
+    <link rel="preconnect" href="rnwk.xyz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	 	<meta property="og:title" content="Reflected Network">
 		<meta name="twitter:title" content="Reflected Network Minecraft Server">
 		<meta name="theme-color" content="#24C6A6">
@@ -12,7 +14,6 @@
 		<meta name="description" content="Fully custom minigames, modded survival, and so much more">
 		<meta property="twitter:description" content="Fully custom minigames, modded survival, and so much more">
 		<link rel="shortcut icon" href="https://reflected.network/assets/icon.png" type="image/png">
-    <script src="javascript/carousel.js" type="application/javascript" async></script>
 		<title>Reflected Network</title>
     <style>
         @media screen and (max-width: 1025px){.centertitle{display:flex;flex-direction:column-reverse;justify-content:center}.mobiledarkenlight{background-color:rgba(0,0,0,.04)}.mobiledarken{background-color:rgba(0,0,0,.3)}}body{margin:0px;overflow-x:hidden}.pagesection{height:100vh;width:100vw;overflow-y:hidden}.actionshot{background-size:200%;background-repeat:no-repeat;background-position-x:center;background-position-y:bottom;width:100%;height:100%}.shadow{filter:drop-shadow(-20px 20px black)}@keyframes moveup{0%{transform:translateY(50vh)}100%{transform:translateY(0vh)}}.centertitle{color:#fffd44;text-align:center;height:100%;display:flex;flex-direction:column-reverse;transform:translateY(100vh);animation:moveup 1s ease-out 0s 1 forwards}.robotoslab{font-family:"Roboto Slab",sans-serif;font-size:10rem}.ubuntuitalic{font-family:"Ubuntu Italic",cursive;font-size:3rem}.reflectedfont{font-family:"Raider Crusader Straight",serif;font-size:10rem;color:#fffd44}/*# sourceMappingURL=index_firstload.css.map */
@@ -32,11 +33,7 @@
         </div>
       </div>
     </div>
-    <img src="images/carousel/slide1.avif" class="preload" />
-    <img src="images/carousel/slide2.avif" class="preload" />
-    <img src="images/carousel/slide3.avif" class="preload" />
-    <img src="images/carousel/slide4.avif" class="preload" />
-    <img src="images/carousel/slide5.avif" class="preload" />
+
     <div class="pagesection" id="carousel">
       <div class="centertitle robotoslab mobiledarken">
         <br />
@@ -47,7 +44,14 @@
         <span class="reflectedfont shadow">RN</span>
       </div>
     </div>
-    <div class="pagesection launchershot" id="launchershot" style="background-color: #010203; background-image: url('images/launcherscreenie.avif');" id="launcherbg">
+    <link rel="prefetch" href="images/carousel/slide1.avif" />
+    <link rel="prefetch" href="images/carousel/slide2.avif" />
+    <link rel="prefetch" href="images/carousel/slide3.avif" />
+    <link rel="prefetch" href="images/carousel/slide4.avif" />
+    <link rel="prefetch" href="images/carousel/slide5.avif" />
+    <script src="javascript/carousel.js" type="application/javascript" async></script>
+
+    <div class="pagesection launchershot" style="background-color: #010203; background-image: url('images/launcherscreenie.avif');" id="launcherbg">
       <div class="download robotoslab" id="downloadcontainer">
         <p>Download.<br />Install.<br />Play multiplayer,<br />with everybody.</p>
         <a id="downloadlink" class="robotoslab downloadlink">Download Client</a>
@@ -55,6 +59,7 @@
     </div>
     <script src="javascript/scroller.js" type="application/javascript" defer></script>
     <script src="javascript/platforms.js" type="application/javascript" defer></script>
+
     <div class="footer">
       <div class="socials">
         <a href="https://rnwk.xyz/discord" rel="noopener noreferrer nofollow" target="_blank">
