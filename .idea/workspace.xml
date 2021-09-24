@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b744f361-194e-40d5-a186-0578b0f81ad4" name="Changes" comment="optimize website loading pass 3">
+    <list default="true" id="b744f361-194e-40d5-a186-0578b0f81ad4" name="Changes" comment="fix preconnect">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/scroller.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/scroller.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,7 @@
       <option name="presentableId" value="Default" />
       <updated>1631244172261</updated>
       <workItem from="1631244174791" duration="67000" />
-      <workItem from="1632518686532" duration="4441000" />
+      <workItem from="1632518686532" duration="4920000" />
     </task>
     <task id="LOCAL-00001" summary="optimize website loading">
       <created>1632520900765</created>
@@ -67,7 +66,28 @@
       <option name="project" value="LOCAL" />
       <updated>1632523037576</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="optimize website loading pass 4">
+      <created>1632523242992</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632523242992</updated>
+    </task>
+    <task id="LOCAL-00005" summary="optimize mobile layout">
+      <created>1632523468109</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1632523468109</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix preconnect">
+      <created>1632523572839</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1632523572839</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +108,9 @@
     <MESSAGE value="optimize website loading" />
     <MESSAGE value="optimize website loading pass 2" />
     <MESSAGE value="optimize website loading pass 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="optimize website loading pass 3" />
+    <MESSAGE value="optimize website loading pass 4" />
+    <MESSAGE value="optimize mobile layout" />
+    <MESSAGE value="fix preconnect" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix preconnect" />
   </component>
 </project>
