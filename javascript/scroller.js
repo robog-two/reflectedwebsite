@@ -27,7 +27,7 @@ const debounce = (fn) => {
 // so we can use it in our stylesheets
 const storeScroll = () => {
   let posY = (visualViewport.height * 0.1) - ((window.scrollY - (visualViewport.height * 2)) * 0.7)
-  document.getElementById("launcherbg").style.backgroundPositionY = `${posY}px`
+  document.getElementById("launchershot").style.backgroundPositionY = `${posY}px`
 
   if (window.scrollY > 0.3 * visualViewport.height) {
     if (document.getElementById("titleprescroll")) {
