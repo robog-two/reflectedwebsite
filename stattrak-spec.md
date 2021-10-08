@@ -2,7 +2,7 @@
 
 ## What is StatTrak
 
-StatTrak is the API endpoint which serves all analytics data from the Reflected URL Shortener, which is used across PMS sites and available at several endpoints for backwards compatibility.
+StatTrak is the public API which serves all analytics data from the Reflected URL Shortener, which is used across PMS sites and available at several endpoints for backwards compatibility.
 
 ## Endpoints
 ### Filled with example responses
