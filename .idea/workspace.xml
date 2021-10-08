@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b744f361-194e-40d5-a186-0578b0f81ad4" name="Changes" comment="improve firefox compat &amp; optimization">
+    <list default="true" id="b744f361-194e-40d5-a186-0578b0f81ad4" name="Changes" comment="fix mobile scale">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/index_firstload.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index_firstload.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/index_firstload.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index_firstload.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/index_firstload.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index_firstload.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +43,8 @@
       <updated>1631244172261</updated>
       <workItem from="1631244174791" duration="67000" />
       <workItem from="1632518686532" duration="7555000" />
-      <workItem from="1632526549677" duration="1650000" />
+      <workItem from="1632526549677" duration="1697000" />
+      <workItem from="1632528910814" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="optimize website loading">
       <created>1632520900765</created>
@@ -112,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632527184520</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix mobile scale">
+      <created>1632528382915</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1632528382915</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +144,7 @@
     <MESSAGE value="async load fonts" />
     <MESSAGE value="accessibility access for links" />
     <MESSAGE value="improve firefox compat &amp; optimization" />
-    <option name="LAST_COMMIT_MESSAGE" value="improve firefox compat &amp; optimization" />
+    <MESSAGE value="fix mobile scale" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix mobile scale" />
   </component>
 </project>
