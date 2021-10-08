@@ -7,14 +7,10 @@ StatTrak is the API endpoint which serves all analytics data from the Reflected 
 ## Endpoints
 ### Filled with example responses
 
-<br />
-
 rnwk.xyz/stattrak
 ```
 (Redirects to this page)
 ```
-
-<br />
 
 rnwk.xyz/stattrak/list
 ```javascript
@@ -29,8 +25,6 @@ rnwk.xyz/stattrak/list
   ],
 }
 ```
-
-<br />
 
 rnwk.xyz/stattrak/stat/`:slug`
 ```javascript
